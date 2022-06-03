@@ -1,0 +1,30 @@
+
+
+header {
+    display: flex;
+    height: 85px;
+    border-bottom: 1px solid black;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .headerlogo img{
+    max-height: 85px;
+    margin-left: 30px;
+}
+
+header .navcontainer {
+    margin-right:30px;
+    background-color: aqua;
+}
+
+header #navlist {
+    display: flex;
+}
+
+header li {
+    padding: 10px;
+    background-color: violet;
+    margin: 5px;
+}
