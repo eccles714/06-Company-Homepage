@@ -6,6 +6,7 @@
 
 html {
     font-family: "one day";
+    font-size: 18px;
 }
 
 body {
@@ -195,4 +196,14 @@ footer img {
     height: 35px;
     width: auto;
     margin-right: 25px;
+}
+
+@media only screen and (max-width: 610px) {
+    footer {font-size: 12px;
+    }
+
+    footer img {
+        height: 25px;
+        width: auto;
+    }
 }
