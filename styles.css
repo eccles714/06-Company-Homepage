@@ -13,7 +13,7 @@ body {
     background-color: rgb(53, 53, 53);
 }
 
-/* <----- HEADER -----> */
+/* <----------------------------------- HEADER ---------------------------------------> */
 
 header {
     position: fixed;
@@ -78,7 +78,7 @@ header .mobile {
     }
 
 
-/* <------ NAV BUTTON ------> */
+/* <--------------------------------------- NAV BUTTON --------------------------------> */
 
 .nav-button {
     display: block;
@@ -110,7 +110,7 @@ header .mobile {
     background-size: 21px, 100%;
 }
 
-/* <------ PRIMARY NAV ------> */
+/* <----------------------------------------- PRIMARY NAV ----------------------------------> */
 
 .primary-nav {
     width: 25%;
@@ -163,7 +163,7 @@ header .mobile {
 }
 
 }
-/* <----- BANNER -----> */
+/* <------------------------------------ BANNER ------------------------------------> */
 
 .bannercontainer {
     width: 100%;
@@ -187,7 +187,54 @@ header .mobile {
     }
 }
 
-/* <----- FOOTER -----> */
+/* <------------------------------------- FEATURED COFFEE ----------------------------------------> */
+
+@media only screen and (max-width: 610px) {
+    .featuredcontainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: rgb(102, 102, 102);
+        text-align: center;
+    }
+    .featuredcontainer .title {
+        background: rgb(24,24,24);
+        width: 100%;
+    }
+    .featuredcontainer .coffee {
+        margin-top: 1rem;
+    }
+    .featuredcontainer #start {
+        margin: 10px 0;
+        background: linear-gradient(180deg, rgba(54,54,54,1) 0%, rgba(24,24,24,1) 100%);
+    }
+    .featuredcontainer #textcolumns {
+        display: flex;
+        margin: .277rem;
+    }
+    .featuredcontainer img{
+        width: 95%;
+    }
+/* ------FEATURED FONTS------ */
+    .featuredcontainer h1 {
+        font-size: 3rem;
+    }
+    .featuredcontainer h2 {
+        font-size: 3rem;
+    }
+    .featuredcontainer h4 {
+        font-size: 1.4rem;
+    }
+    .featuredcontainer h6 {
+        font-size: 1.4rem;
+    }
+    .featuredcontainer h5 {
+        margin: 30px;
+        padding: 10px;
+        font-size: 2rem;
+    }
+}
+/* <--------------------------- FOOTER -----------------------------> */
 
 footer {
     position: absolute;
