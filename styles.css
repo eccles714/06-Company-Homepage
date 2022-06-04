@@ -9,7 +9,6 @@ html {
     font-size: 18px;
 }
 
-}
 body {
     background-color: rgb(53, 53, 53);
 }
@@ -174,6 +173,18 @@ header .mobile {
     background-repeat: no-repeat;
     background-size: cover;
     height: 1500px
+}
+
+@media only screen and (max-width: 610px) {
+    .bannercontainer {
+        width: 100%;
+        background-image: url(resources/coffee-bar-1.jpg);
+        position: relative;
+        background-position-x: 60%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1500px
+    }
 }
 
 /* <----- FOOTER -----> */
