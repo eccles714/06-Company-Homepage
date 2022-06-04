@@ -5,9 +5,17 @@
     <link rel="shortcut icon" href="resources/coffee-favicon.png" type="image/x-icon">
     <link href="reset.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/mobilemenu.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".nav-button").click(function () {
+        $(".nav-button,.primary-nav").toggleClass("open");
+        });    
+      });
+    </script>
   </head>
-
-<!------- BODY ------->
 
   <body>
 
@@ -17,6 +25,7 @@
       <div class="headerlogo">
         <img src="resources/club-logo.png" alt="club logo">
       </div>
+      	
       <div class="navcontainer">
         <ul id="navlist">
           <li><a href="#">Coffee for Home</a></li>
@@ -24,7 +33,17 @@
           <li><a href="#">Download the App</a></li>
         </ul>
       </div>
+        <button class="nav-button">Toggle Navigation</button>
+      <div class="mobile">
+        <ul class="primary-nav">
+          <li><a href="#">Coffee for Home</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Download the App</a></li>
+        </ul>
+      </div>
+    
     </header>
+  
     <div class="barcontainer"> 
       <div id="bar">
     </div>
