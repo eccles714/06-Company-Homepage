@@ -89,6 +89,7 @@ header .mobile {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 21px, 100%;
+    background-color: rgb(78, 78, 78);
     cursor: pointer;
     border: 0 none;
     border-bottom: 1px solid rgba(255,255,255,.1);
@@ -104,6 +105,7 @@ header .mobile {
     background-image: url(resources/close-icon-large.png), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
     background-position: center center;
     background-repeat: no-repeat;
+    background-color: rgb(78, 78, 78);
     background-size: 21px, 100%;
 }
 
