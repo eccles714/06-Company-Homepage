@@ -5,10 +5,11 @@
 }
 
 html {
-    font-family: "one day";
+    font-family: "one day", monospace;
     font-size: 18px;
 }
 
+}
 body {
     background-color: rgb(53, 53, 53);
 }
@@ -199,11 +200,17 @@ footer img {
 }
 
 @media only screen and (max-width: 610px) {
-    footer {font-size: 12px;
+    footer {
+        font-size: 10px;
+    }
+
+    footer h6 {
+        width: 20%;
+        text-align: center;
     }
 
     footer img {
-        height: 25px;
+        height: 20px;
         width: auto;
     }
 }
