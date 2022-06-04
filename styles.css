@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: "one day";
-    src: url(resources/ONEDAY.ttf);
+    src: url(/resources/ONEDAY.ttf);
 }
 
 html {
@@ -63,7 +63,7 @@ header a {
 
 .bannercontainer {
     width: 100%;
-    background-image: url(resources/coffee-bar-1.jpg);
+    background-image: url(/resources/coffee-bar-1.jpg);
     position: relative;
     /* top: 86px; */
     background-position: center;
