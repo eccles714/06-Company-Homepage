@@ -189,6 +189,67 @@ header .mobile {
 
 /* <------------------------------------- FEATURED COFFEE ----------------------------------------> */
 
+.featuredcontainer {
+    color: rgb(102, 102, 102);
+    text-align: center;
+}
+.featuredcontainer .title {
+    background: rgb(24,24,24);
+    width: 100%;
+}
+.featuredcontainer.coffeecontainer {
+    display: flex;
+    justify-content: center;
+}
+.featuredcontainer .row1{
+    display: flex;
+    margin: 1%;
+    width: 100%;
+}
+.featuredcontainer .row2 {
+    margin: 1%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.featuredcontainer .coffee {
+    margin-top: 1rem;
+    width:49%;
+}
+.featuredcontainer #start {
+    margin: 10px 0;
+    background: linear-gradient(0deg, rgba(54,54,54,1) 0%, rgba(24,24,24,1) 100%);
+}
+.featuredcontainer img{
+    width: 95%;
+    height: 500px
+}
+.featuredcontainer #textcolumns {
+    display: flex;
+    justify-content: space-around;
+    margin: .277rem;
+}
+
+/* ------FEATURED FONTS------ */
+.featuredcontainer h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.featuredcontainer h2 {
+    font-size: 3rem;
+}
+.featuredcontainer h4 {
+    font-size: 1.5rem;
+}
+.featuredcontainer h6 {
+    font-size: 1.5rem;
+}
+.featuredcontainer h5 {
+    margin: 30px;
+    padding: 10px;
+    font-size: 2.5rem;
+}
+
 @media only screen and (max-width: 610px) {
     .featuredcontainer {
         display: flex;
