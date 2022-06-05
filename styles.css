@@ -213,7 +213,7 @@ header .mobile {
         margin: .277rem;
     }
     .featuredcontainer img{
-        width: 95%;
+        width: 100%;
     }
 /* ------FEATURED FONTS------ */
     .featuredcontainer h1 {
@@ -223,10 +223,10 @@ header .mobile {
         font-size: 3rem;
     }
     .featuredcontainer h4 {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
     .featuredcontainer h6 {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
     .featuredcontainer h5 {
         margin: 30px;
