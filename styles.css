@@ -1,12 +1,12 @@
 
 @font-face {
-    font-family: "one day";
+    font-family: "ONEDAY";
     src: url(https://github.com/eccles714/06-Company-Homepage/blob/main/resources/ONEDAY.ttf) format("truetype");
     src: url(https://github.com/eccles714/06-Company-Homepage/blob/main/resources/ONEDAY.woff) format("woff");
 }
 
 html {
-    font-family: "one day", "Unica One";
+    font-family: "ONEDAY", helvetica;
     font-size: 18px;
 }
 
