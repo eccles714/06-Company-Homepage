@@ -1,8 +1,8 @@
 
 @font-face {
     font-family: "one day";
-    src: url(/resources/ONEDAY.ttf) format("truetype");
-    src: url(/resources/ONEDAY.woff) format("woff");
+    src: url(C:\Users\Adam\Documents\GitHub\06-Company-Homepage\resources\ONEDAY.ttf) format("truetype");
+    src: url(C:\Users\Adam\Documents\GitHub\06-Company-Homepage\resources\ONEDAY.woff) format("woff");
 }
 
 html {
