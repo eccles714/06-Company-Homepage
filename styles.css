@@ -68,7 +68,7 @@ header .mobile {
     display: none;
 }
 
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 650px) {
     header .navcontainer {
         display: none;
     }
@@ -175,7 +175,7 @@ header .mobile {
     height: 1500px
 }
 
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 650px) {
     .bannercontainer {
         width: 100%;
         background-image: url(resources/coffee-bar-1.jpg);
@@ -189,53 +189,8 @@ header .mobile {
 
 /* <------------------------------------- FEATURED COFFEE ----------------------------------------> */
 
-@media only screen and (max-width: 610px) {
-    .featuredcontainer {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        color: rgb(102, 102, 102);
-        text-align: center;
-    }
-    .featuredcontainer .title {
-        background: rgb(24,24,24);
-        width: 100%;
-    }
-    .featuredcontainer .coffee {
-        margin-top: 1rem;
-    }
-    .featuredcontainer #start {
-        margin: 10px 0;
-        background: linear-gradient(180deg, rgba(54,54,54,1) 0%, rgba(24,24,24,1) 100%);
-    }
-    .featuredcontainer #textcolumns {
-        display: flex;
-        margin: .277rem;
-    }
-    .featuredcontainer img{
-        width: 100%;
-    }
-/* ------FEATURED FONTS------ */
-    .featuredcontainer h1 {
-        font-size: 3rem;
-    }
-    .featuredcontainer h2 {
-        font-size: 3rem;
-    }
-    .featuredcontainer h4 {
-        font-size: 1rem;
-    }
-    .featuredcontainer h6 {
-        font-size: 1rem;
-    }
-    .featuredcontainer h5 {
-        margin: 30px;
-        padding: 10px;
-        font-size: 2rem;
-    }
-}
-
- @media only screen and (min-width: 610px) {
+/* DESKTOP DISPLAY */
+@media only screen and (min-width: 651px) {
     
     .featuredcontainer {
         color: rgb(102, 102, 102);
@@ -298,6 +253,53 @@ header .mobile {
         font-size: 2.5rem;
     }
 }
+/* MOBILE DISPLAY */
+@media only screen and (max-width: 650px) {
+    .featuredcontainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: rgb(102, 102, 102);
+        text-align: center;
+    }
+    .featuredcontainer .title {
+        background: rgb(24,24,24);
+        width: 100%;
+    }
+    .featuredcontainer .coffee {
+        margin-top: 1rem;
+    }
+    .featuredcontainer #start {
+        margin: 10px 0;
+        background: linear-gradient(180deg, rgba(54,54,54,1) 0%, rgba(24,24,24,1) 100%);
+    }
+    .featuredcontainer #textcolumns {
+        display: flex;
+        margin: .277rem;
+    }
+    .featuredcontainer img{
+        width: 100%;
+    }
+/* ------FEATURED FONTS------ */
+    .featuredcontainer h1 {
+        font-size: 3rem;
+    }
+    .featuredcontainer h2 {
+        font-size: 3rem;
+    }
+    .featuredcontainer h4 {
+        font-size: 1rem;
+    }
+    .featuredcontainer h6 {
+        font-size: 1rem;
+    }
+    .featuredcontainer h5 {
+        margin: 30px;
+        padding: 10px;
+        font-size: 2rem;
+    }
+}
+
 /* <--------------------------- FOOTER -----------------------------> */
 
 footer {
