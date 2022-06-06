@@ -320,9 +320,12 @@ header .mobile {
     width:100%;
     margin:2%;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .staffcontainer .pic{
     flex-shrink: 1;
+    flex-grow: 1;
     height: 300px;
     width:300px;
     background-position: center;
@@ -331,7 +334,6 @@ header .mobile {
 .staffcontainer .pic h2 {
     color:rgb(175, 175, 175);
     background-color:rgb(78, 78, 78);
-    text-align: right;
     opacity: .8;
 }
 .staffcontainer #jeff {
