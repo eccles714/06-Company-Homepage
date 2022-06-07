@@ -165,17 +165,33 @@ header .mobile {
 
 }
 /* <------------------------------------ BANNER ------------------------------------> */
-
-.bannercontainer {
-    width: 100%;
-    background-image: url(resources/coffee-bar-1.jpg);
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1500px
+@media only screen and (min-width: 650px) {
+    .bannercontainer {
+        width: 100%;
+        background-image: url(resources/coffee-bar-1.jpg);
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1500px;
+        display: flex;
+        justify-content: center;
+    }
+    .bannercontainer #club {
+        position: absolute;
+        top: 20%;
+        height: 400px;
+        z-index: 2;
+    }
+    .bannercontainer #bannerbar {
+        position: absolute;
+        top: 20%;
+        width: 100%;
+        height: 400px;
+        background-color: rgb(53, 53, 53);
+        opacity: .8;
+    }
 }
-
 @media only screen and (max-width: 650px) {
     .bannercontainer {
         width: 100%;
@@ -184,7 +200,23 @@ header .mobile {
         background-position-x: 60%;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 1500px
+        height: 1500px;
+        display: flex;
+        justify-content: center;
+    }
+    .bannercontainer #club {
+        position: absolute;
+        top: 20%;
+        height: 400px;
+        z-index: 2;
+    }
+    .bannercontainer #bannerbar {
+        position: absolute;
+        top: 20%;
+        width: 100%;
+        height: 400px;
+        background-color: rgb(53, 53, 53);
+        opacity: .8;
     }
 }
 
@@ -300,58 +332,93 @@ header .mobile {
         font-size: 2rem;
     }
 }
-/* <--------------------------- STAFF -----------------------------> */
+/* <--------------------------- COFFEE PIC -----------------------------> */
+/* <---------MOBILE ------------> */
 @media only screen and (max-width: 650px) {
-    .staffcontainer {
-        display:none;
+    .coffeepiccontainer {
+        position: relative;
+        display:flex;
+    }
+    .coffeepiccontainer .coffeepic {
+        position: relative;
+        /* top: 1000px; */
+        width: 100%;
+        height: 2000px;
+        background-image: url(resources/coffeebeans.jpg);
+        background-position: center;
     }
 }
-.staffcontainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+
+/* <------ DESKTOP ----------> */
+@media only screen and (min-width: 650px) {
+    .coffeepiccontainer {
+        position: relative;
+    }
+    .coffeepiccontainer .fullgradient {
+        width:100%;
+        height: 2000px;
+        background: linear-gradient(to bottom, rgb(53, 53, 53), transparent),url(resources/coffeebeans.jpg);
+        background-position: center;
+        display:flex;
+        align-items: flex-end;
+    }
 }
-.staffcontainer .title {
-    text-align: center;
-    font-size: 3rem;
-    margin-top: 300px;
+
+/* <--------------------------- STAFF -----------------------------> */
+/* <----------MOBILE --------------> */
+@media only screen and (max-width: 650px) {
+    .staffcontainer {
+        display: none;
+    }
 }
-.staffcontainer .piccontainer {
-    width:100%;
-    margin:2%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.staffcontainer .pic{
-    flex-shrink: 1;
-    flex-grow: 1;
-    height: 300px;
-    width:300px;
-    background-position: center;
-    background-size: cover;
-}
-.staffcontainer .pic h2 {
-    color:rgb(175, 175, 175);
-    background-color:rgb(78, 78, 78);
-    opacity: .8;
-}
-.staffcontainer #jeff {
-    background-image: url(resources/staffjeff.jpg);
-}
-.staffcontainer #meryl {
-    background-image: url(resources/staffmeryl.jpg);
-}
-.staffcontainer #danny {
-    background-image: url(resources/staffplaceholder.jpg);
-}
-.staffcontainer #dave {
-    background-image: url(resources/staffdave.jpg);
+/* <------ DESKTOP ----------> */
+@media only screen and (min-width: 650px) {
+    .staffcontainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .staffcontainer .title {
+        text-align: center;
+        font-size: 3rem;
+    }
+    .staffcontainer .piccontainer {
+        width:100%;
+        margin:2%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .staffcontainer .pic{
+        flex-shrink: 1;
+        flex-grow: 1;
+        height: 300px;
+        width:300px;
+        background-position: center;
+        background-size: cover;
+    }
+    .staffcontainer .pic h2 {
+        color:rgb(175, 175, 175);
+        background-color:rgb(78, 78, 78);
+        opacity: .8;
+    }
+    .staffcontainer #jeff {
+        background-image: url(resources/staffjeff.jpg);
+    }
+    .staffcontainer #meryl {
+        background-image: url(resources/staffmeryl.jpg);
+    }
+    .staffcontainer #danny {
+        background-image: url(resources/staffdanny.png);
+    }
+    .staffcontainer #dave {
+        background-image: url(resources/staffdave.jpg);
+    }
 }
 /* <--------------------------- FOOTER -----------------------------> */
 
 footer {
-    position: absolute;
+    position: relative;
     display: flex;
     background-color: rgb(102, 102, 102);
     width: 100%;
@@ -371,7 +438,7 @@ footer img {
     margin-right: 25px;
 }
 
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 650px) {
     footer {
         font-size: 10px;
     }
