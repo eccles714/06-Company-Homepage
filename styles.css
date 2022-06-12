@@ -229,12 +229,10 @@ header .mobile {
         justify-content: center;
     }
     .featuredcontainer .coffee {
-        margin-top: 1rem;
-        width:49%;
+        width:50%;
     }
     .featuredcontainer #start {
-        margin: 10px 0;
-        background: linear-gradient(0deg, rgba(54,54,54,1) 0%, rgba(24,24,24,1) 100%);
+        background: linear-gradient(180deg, rgba(54,54,54,1) 0%, rgba(24,24,24,1) 100%);
     }
     .featuredcontainer img{
         width: 95%;
