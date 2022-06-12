@@ -203,10 +203,14 @@ header .mobile {
 /* <------------------------------------- FEATURED COFFEE ----------------------------------------> */
 /* DESKTOP DISPLAY */
 @media only screen and (min-width: 651px) {
-    
     .featuredcontainer {
         color: rgb(102, 102, 102);
         text-align: center;
+    }
+    .featuredcontainer #navcoffee{
+        height: 86px;
+        position: absolute;
+        top: 1410px;
     }
     .featuredcontainer .title {
         background: rgb(24,24,24);
@@ -214,6 +218,7 @@ header .mobile {
     }
     .featuredcontainer .title h4 {
         font-family: "Lato";
+        padding-bottom: 2rem;
     }
     .featuredcontainer.coffeecontainer {
         display: flex;
