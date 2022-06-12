@@ -1,8 +1,9 @@
 
 @font-face {
     font-family: "ONEDAY";
-    src: url(https://github.com/eccles714/06-Company-Homepage/blob/main/resources/ONEDAY.ttf) format("truetype");
-    src: url(https://github.com/eccles714/06-Company-Homepage/blob/main/resources/ONEDAY.woff) format("woff");
+    /* src: url(https://github.com/eccles714/06-Company-Homepage/blob/main/resources/ONEDAY.ttf) format("truetype"); */
+    /* src: url(https://github.com/eccles714/06-Company-Homepage/blob/main/resources/ONEDAY.woff) format("woff"); */
+    src: url(resources/ONEDAY.otf)
 }
 
 html {
