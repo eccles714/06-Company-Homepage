@@ -340,38 +340,13 @@ header .mobile {
         flex-direction: column;
     }
     .coffeepiccontainer .missioncontainer {
-        margin: 500px auto;
-        font-size: 2.5rem;
+        background-image: url(resources/motto.png);
+        height:50%;
         width: 100%;
-        color: rgb(175, 175, 175);
-    }
-    .coffeepiccontainer .missioncontainer #first {
-        transform: rotate(-45deg);
-        position: absolute;
-        /* background-color: aqua; */
-        top: 350px;
-        left: -100px;
-    }
-    .coffeepiccontainer .missioncontainer #second{
-        transform: rotate(45deg);
-        position: absolute;
-        /* background-color: yellow; */
-        top: 350px;
-        right: -100px;
-    }
-    .coffeepiccontainer .missioncontainer #third{
-        transform: rotate(45deg);
-        position: absolute;
-        /* background-color: blue; */
-        top: 1015px;
-        left: -100px;
-    }
-    .coffeepiccontainer .missioncontainer #fourth{
-        transform: rotate(-45deg);
-        position: absolute;
-        /* background-color: blueviolet; */
-        top: 1015px;
-        right: -100px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 300px;
     }
 }
 
@@ -394,19 +369,22 @@ header .mobile {
     .staffcontainer .title {
         text-align: center;
         font-size: 3rem;
+        z-index: 2;
+        color: rgb(175, 175, 175);
     }
     .staffcontainer .piccontainer {
         width:100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        z-index: 2;
     }
     .staffcontainer .pic{
         flex-shrink: 1;
         flex-grow: 1;
         height: 300px;
-        width:300px;
-        background-position: center;
+        width: 300px;
+        background-position:top;
         background-size: cover;
     }
     .staffcontainer .pic h2 {
@@ -425,6 +403,13 @@ header .mobile {
     }
     .staffcontainer #dave {
         background-image: url(resources/staffdave.jpg);
+    }
+    .staffcontainer #staffbar {
+        height: 200px;
+        width: 100%;
+        background-color: rgb(53, 53, 53);
+        position: absolute;
+        opacity: .8;
     }
 }
 /* <--------------------------- FOOTER -----------------------------> */
