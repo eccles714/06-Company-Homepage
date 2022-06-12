@@ -220,10 +220,6 @@ header .mobile {
         font-family: "Lato";
         padding-bottom: 2rem;
     }
-    .featuredcontainer.coffeecontainer {
-        display: flex;
-        justify-content: center;
-    }
     .featuredcontainer .row1{
         display: flex;
         width: 100%;
@@ -334,16 +330,51 @@ header .mobile {
 @media only screen and (min-width: 650px) {
     .coffeepiccontainer {
         position: relative;
-    }
-    .coffeepiccontainer .fullgradient {
         width:100%;
         height: 2000px;
         background: linear-gradient(to bottom, rgb(53, 53, 53), transparent),url(resources/coffeebeans.jpg);
         background-position: center;
         display:flex;
-        align-items: flex-end;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .coffeepiccontainer .missioncontainer {
+        margin: 500px auto;
+        font-size: 2.5rem;
+        width: 100%;
+        color: rgb(175, 175, 175);
+    }
+    .coffeepiccontainer .missioncontainer #first {
+        transform: rotate(-45deg);
+        position: absolute;
+        /* background-color: aqua; */
+        top: 350px;
+        left: -100px;
+    }
+    .coffeepiccontainer .missioncontainer #second{
+        transform: rotate(45deg);
+        position: absolute;
+        /* background-color: yellow; */
+        top: 350px;
+        right: -100px;
+    }
+    .coffeepiccontainer .missioncontainer #third{
+        transform: rotate(45deg);
+        position: absolute;
+        /* background-color: blue; */
+        top: 1015px;
+        left: -100px;
+    }
+    .coffeepiccontainer .missioncontainer #fourth{
+        transform: rotate(-45deg);
+        position: absolute;
+        /* background-color: blueviolet; */
+        top: 1015px;
+        right: -100px;
     }
 }
+
 /* <--------------------------- STAFF -----------------------------> */
 /* <----------MOBILE --------------> */
 @media only screen and (max-width: 650px) {
@@ -354,6 +385,8 @@ header .mobile {
 /* <------ DESKTOP ----------> */
 @media only screen and (min-width: 650px) {
     .staffcontainer {
+        position: absolute;
+        bottom: 200px;
         display: flex;
         flex-direction: column;
         width: 100%;
