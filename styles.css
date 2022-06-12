@@ -1,26 +1,20 @@
 
 @font-face {
     font-family: "ONEDAY";
-    /* src: url(https://github.com/eccles714/06-Company-Homepage/blob/main/resources/ONEDAY.ttf) format("truetype"); */
-    /* src: url(https://github.com/eccles714/06-Company-Homepage/blob/main/resources/ONEDAY.woff) format("woff"); */
     src: url(resources/ONEDAY.otf)
 }
 @font-face {
     font-family: "Lato";
-    src: url(resources/Lato-Thin.ttf);
+    src: url(resources/Lato-Light.ttf);
 }
-
 html {
     font-family: "ONEDAY", "Lato";
     font-size: 18px;
 }
-
 body {
     background-color: rgb(53, 53, 53);
 }
-
 /* <----------------------------------- HEADER ---------------------------------------> */
-
 header {
     position: fixed;
     display: flex;
@@ -31,7 +25,6 @@ header {
     align-items: center;
     z-index: 4;
 }
-
 div #bar {
     position: fixed;
     display: flex;
@@ -41,51 +34,39 @@ div #bar {
     z-index: 3; 
     opacity: .8;
 }
-
 header .headerlogo img{
     max-height: 85px;
     margin-left: 30px;
 }
-
 header .navcontainer {
     margin-right:30px;
 }
-
 header #navlist {
     display: flex;
 }
-
 header li {
     padding: 10px;
     background-color: rgb(78, 78, 78);
     margin: 5px;
     border-radius: 7px;
 }
-
 header a {
     color: rgb(175, 175, 175);
 }
-
 header .mobile {
     display: none;
 }
-
 .nav-button {
     display: none;
 }
-
 @media only screen and (max-width: 650px) {
     header .navcontainer {
         display: none;
     }
-
     header .mobile{
         display: block;
     }
-
-
 /* <--------------------------------------- NAV BUTTON --------------------------------> */
-
 .nav-button {
     display: block;
     position: fixed;
@@ -115,9 +96,7 @@ header .mobile {
     background-color: rgb(78, 78, 78);
     background-size: 21px, 100%;
 }
-
 /* <----------------------------------------- PRIMARY NAV ----------------------------------> */
-
 .primary-nav {
     width: 25%;
     float: none;
@@ -125,7 +104,6 @@ header .mobile {
     height: 50px;
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
     position: absolute;
     top: 40px;
     right: 7%;
@@ -157,9 +135,7 @@ header .mobile {
 .primary-nav > li:first-child {
     border-top: 1px solid rgba(0,0,0,.2);
 }
-
 /* Toggle the navigation bar open  */
-
 .primary-nav.open {
     height: auto;
     padding-top: 50px;
@@ -167,7 +143,6 @@ header .mobile {
 .primary-nav.open li {
     display: block;
 }
-
 }
 /* <------------------------------------ BANNER ------------------------------------> */
 @media only screen and (min-width: 650px) {
@@ -225,9 +200,7 @@ header .mobile {
         opacity: .8;
     }
 }
-
 /* <------------------------------------- FEATURED COFFEE ----------------------------------------> */
-
 /* DESKTOP DISPLAY */
 @media only screen and (min-width: 651px) {
     
@@ -239,17 +212,18 @@ header .mobile {
         background: rgb(24,24,24);
         width: 100%;
     }
+    .featuredcontainer .title h4 {
+        font-family: "Lato";
+    }
     .featuredcontainer.coffeecontainer {
         display: flex;
         justify-content: center;
     }
     .featuredcontainer .row1{
         display: flex;
-        margin: 1%;
         width: 100%;
     }
     .featuredcontainer .row2 {
-        margin: 1%;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -271,14 +245,15 @@ header .mobile {
         justify-content: space-around;
         margin: .277rem;
     }
-
 /* ------FEATURED FONTS------ */
     .featuredcontainer h1 {
         font-size: 3rem;
         margin-bottom: 1.5rem;
+        color:rgb(175, 175, 175)
     }
     .featuredcontainer h2 {
         font-size: 3rem;
+        color:rgb(175, 175, 175)
     }
     .featuredcontainer h4 {
         font-size: 1.5rem;
@@ -305,11 +280,10 @@ header .mobile {
         background: rgb(24,24,24);
         width: 100%;
     }
-    .featuredcontainer .coffee {
-        margin-top: 1rem;
-    }
+    .featuredcontainer .title h4 {
+        font-family: "Lato";
+    }    
     .featuredcontainer #start {
-        margin: 10px 0;
         background: linear-gradient(180deg, rgba(54,54,54,1) 0%, rgba(24,24,24,1) 100%);
     }
     .featuredcontainer #textcolumns {
@@ -347,14 +321,12 @@ header .mobile {
     }
     .coffeepiccontainer .coffeepic {
         position: relative;
-        /* top: 1000px; */
         width: 100%;
         height: 2000px;
         background-image: url(resources/coffeebeans.jpg);
         background-position: center;
     }
 }
-
 /* <------ DESKTOP ----------> */
 @media only screen and (min-width: 650px) {
     .coffeepiccontainer {
@@ -369,7 +341,6 @@ header .mobile {
         align-items: flex-end;
     }
 }
-
 /* <--------------------------- STAFF -----------------------------> */
 /* <----------MOBILE --------------> */
 @media only screen and (max-width: 650px) {
@@ -421,7 +392,6 @@ header .mobile {
     }
 }
 /* <--------------------------- FOOTER -----------------------------> */
-
 footer {
     position: relative;
     display: flex;
@@ -431,28 +401,22 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
-
 footer h6 {
     margin-left: 25px;
 }
-
-
 footer img {
     height: 35px;
     width: auto;
     margin-right: 25px;
 }
-
 @media only screen and (max-width: 650px) {
     footer {
         font-size: 10px;
     }
-
     footer h6 {
         width: 20%;
         text-align: center;
     }
-
     footer img {
         height: 20px;
         width: auto;
